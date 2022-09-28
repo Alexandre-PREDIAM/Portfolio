@@ -516,13 +516,6 @@ form btn2 {
   .copyright {
     font-size: 14px;
   }
-
-  .btn.btn2 {
-    display: block;
-    margin: auto;
-    margin-top: 50px;
-  }
-
 }
 
 #msg {
