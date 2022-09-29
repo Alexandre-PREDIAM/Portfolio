@@ -42,20 +42,12 @@ form.addEventListener('submit', e => {
     .catch(error => console.error('Error!', error.message))
 })
 
-// Parameter 
+const sr = ScrollReveal ({
+  distance: '22px',
+  duration: 2600,
+  reset: true
+})
 
-// const header = document.querySelector("header");
+sr.reveal('.header-text',{delay:190, origin:'left'})
 
-// window.addEventListener ("scroll", function() {
-//   header.classList.toggle("sticky", window.scrollY > 0);
-// });
-
-// const sr = ScrollReveal ({
-//     distance: '25px',
-//     duration: 2500,
-//     reset: true
-// })
-
-// sr.reveal('.home-text',{delay:190, origin:'bottom'})
-
-// sr.reveal('.about,.services,.portfolio,.contact',{delay:200, origin:'bottom'})
+sr.reveal('#about,#services,#portfolio,#contact',{delay:300, origin:'left'})
